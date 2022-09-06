@@ -56,8 +56,8 @@ All values given will be integers.
 ```
 
 ### Explanation
-$6 \text{\textasciicircum} 0 \text{\textasciicircum} 10 = 0110_{2} \text{\textasciicircum} 0000_{2} \text{\textasciicircum} 1010_{2} = 12$
+$6$ ^ $0$ ^ $10 = 0110_{2}$ ^ $0000_{2}$ ^ $1010_{2} = 12$
 
 $8 = 0100_{2} = 8$
 
-$10 \text{\textasciicircum} 8 \text{\textasciicircum} 8 = 1010_{2} \text{\textasciicircum} 1000_{2} \text{\textasciicircum} 1000_{2} = 10$
+$10$ ^ $8$ ^ $8 = 1010_{2}$ ^ $1000_{2}$ ^ $1000_{2} = 10$
