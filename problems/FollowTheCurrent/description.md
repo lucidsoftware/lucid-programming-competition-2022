@@ -31,11 +31,11 @@ CurrentDirection = North, East, South, or West. CurrentDirection will only be gi
 A single integer showing the probability that a life raft will reach land within the specified number of hours. This should be rounded to the nearest whole percentage point, or rounded up if it’s halfway between two percentage points.
 
 ## Constraints
-0 < Hours < 30
+0 < Hours <= 50
 
-0 < Width < 100, Width will always be an odd number (so there is a definite center)
+0 < Width < 50, Width will always be an odd number (so there is a definite center)
 
-0 < Height < 100, Height will always be an odd number (so there is a definite center)
+0 < Height < 50, Height will always be an odd number (so there is a definite center)
 
 ## Examples
 ### Input 1
