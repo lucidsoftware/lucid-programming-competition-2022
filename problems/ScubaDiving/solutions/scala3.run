@@ -1,0 +1,2 @@
+#!/bin/bash
+scala $(dirname $0)/scala3/main.scala
