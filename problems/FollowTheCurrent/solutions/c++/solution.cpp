@@ -9,6 +9,29 @@ enum direction
     west = 3
 };
 
+/*void printTotals(vector<vector<vector<long>>> rafts, int height, int width){
+    for(int row = 0; row < height; row++){
+        for(int col = 0; col < width; col++){
+            int total = 0;
+            for(int dir = north; dir <= west; dir++){
+                total += rafts.at(row).at(col).at(dir);
+            }
+            cout << total;
+        }
+        cout << "\n";
+    }
+    cout << "\n";
+}*/
+
+/*void printVector(vector<vector<string>> fullVector){
+    for(int row = 0; row < fullVector.size(); row++){
+        for(int col = 0; col < fullVector.at(0).size(); col++){
+            cout << fullVector.at(row).at(col);
+        }
+        cout << "\n";
+    }
+}*/
+
 vector<vector<string>> createVector(int height, int width){
    vector<vector<string>> fullVector;
    for(int row = 0; row < height; row++){
@@ -152,8 +175,10 @@ int main() {
     }
     direction startingDirection = stringToDirection(currents.at(centerHeight).at(centerWidth));
     rafts.at(centerHeight).at(centerWidth).at(startingDirection) = 1;
+    //printTotals(rafts, height, width);
     for(int hour = 1; hour <= hours; hour++){
         rafts = passOneHour(rafts, currents, types, height, width);
+        //printTotals(rafts, height, width);
     }
     cout << countLand(rafts, types, height, width);
 
