@@ -45,7 +45,9 @@ Land
 
 Visualization (not included in input):
 
+
 |   |   |   |
+| - | - | - |
 | → | ↑ | ← |
 |   |   |   |
 
