@@ -1,5 +1,5 @@
 10
-10 10
+9 9
 Water South
 Water West
 Water West
@@ -12,16 +12,15 @@ Water South
 Water North
 Land  
 Water West
+Water South
+Water South
+Water West
+Water East
 Land  
 Water South
 Water West
-Water West
+Water North
 Land  
-Land  
-Land  
-Water East
-Water East
-Water West
 Water East
 Water East
 Land  
@@ -29,20 +28,19 @@ Water East
 Water North
 Land  
 Water East
-Land  
-Water North
-Water East
-Water South
-Water East
-Land  
-Land  
 Water West
+Water North
+Water South
+Water North
 Water East
+Water North
+Water North
+Land  
 Water East
 Land  
 Water North
 Water South
-Water South
+Water North
 Water South
 Water West
 Water West
@@ -55,12 +53,11 @@ Water North
 Water North
 Water West
 Land  
-Water North
 Water South
 Water West
 Water South
-Water West
-Land  
+Water South
+Water East
 Water South
 Land  
 Water North
@@ -74,29 +71,13 @@ Water East
 Water West
 Water West
 Land  
-Land  
-Water North
-Water East
-Water East
-Land  
 Water West
-Land  
-Land  
-Water North
-Land  
-Land  
-Land  
-Water North
-Land  
-Land  
 Water East
-Water West
-Land  
 Water South
-Water East
+Water South
 Water West
 Water North
-Land  
-Water South
 Water North
+Water West
+Land  
 Water North
