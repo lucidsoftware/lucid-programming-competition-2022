@@ -31,6 +31,7 @@ A single integer showing the probability that a life raft will reach land within
 
 ## Examples
 ### Input 1
+```
 1
 3 3
 Land
@@ -42,7 +43,7 @@ Water West
 Land
 Land
 Land
-
+```
 Visualization (not included in input):
 
 | Ѧ | Ѧ | Ѧ |
@@ -51,14 +52,31 @@ Visualization (not included in input):
 | Ѧ | Ѧ | Ѧ |
 
 
-Output 1
-
+### Output 1
+```
 100
+```
 
-Input 2
-
-lexiyorgason@gmail.com
-
+### Input 2
+```
+3
+5 3
+Land
+Water West
+Water East
+Land
+Land
+Land
+Water North
+Water West
+Land
+Water South
+Land
+Water West
+Water South
+Water North
+Water East
+```
 Visualization (not included in input):
 
 | Ѧ | ← | → | Ѧ | Ѧ |
@@ -67,6 +85,7 @@ Visualization (not included in input):
 | Ѧ | ← | ↓ | ↑ | → |
 
 
-Output 2
-
+### Output 2
+```
 75
+```
