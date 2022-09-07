@@ -9,10 +9,12 @@ enum direction
     west = 3
 };
 
+// For testing purposes
+
 /*void printTotals(vector<vector<vector<long>>> rafts, int height, int width){
     for(int row = 0; row < height; row++){
         for(int col = 0; col < width; col++){
-            int total = 0;
+            long total = 0;
             for(int dir = north; dir <= west; dir++){
                 total += rafts.at(row).at(col).at(dir);
             }
