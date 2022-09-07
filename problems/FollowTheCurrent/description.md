@@ -45,11 +45,10 @@ Land
 
 Visualization (not included in input):
 
-
-|   |   |   |
+| Ѧ | Ѧ | Ѧ |
 | - | - | - |
 | → | ↑ | ← |
-|   |   |   |
+| Ѧ | Ѧ | Ѧ |
 
 
 Output 1
@@ -62,27 +61,10 @@ lexiyorgason@gmail.com
 
 Visualization (not included in input):
 
-
-
-←
-→
-
-
-
-
-
-
-↑
-←
-
-
-↓
-
-
-←
-↓
-↑
-→
+| Ѧ | ← | → | Ѧ | Ѧ |
+| - | - | - | - | - |
+| Ѧ | ↑ | ← | Ѧ | ↓ |
+| Ѧ | ← | ↓ | ↑ | → |
 
 
 Output 2
