@@ -43,7 +43,7 @@ $grid[i][j]$ will be 0 or 1
 ```
 
 ### Explanation 1
-Two bridges each of length one are needed to connect all islands on the given graph
+Two bridges each of length one are needed to connect all islands
 ```
 1 - 1
 0 0 |
@@ -69,6 +69,28 @@ Only two of the islands can be connected.
 ```
 1 - 1
 0 0 0
+0 1 0
+```
+
+
+### Example Input 3
+```
+3 3
+1 1 0
+1 0 1
+0 1 0
+```
+
+### Example Output 3
+```
+2
+```
+
+### Explanation 3
+Two bridges each of length one are needed to connect all islands
+```
+1 1 0
+1 + 1
 0 1 0
 ```
 
