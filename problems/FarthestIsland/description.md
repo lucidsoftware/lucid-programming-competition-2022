@@ -17,7 +17,9 @@ The output should be a single integer representing the furthest island John can 
 
 ## Constraints
 $m$ and $c$ will be non-negative integers
+
 $1  \leq s \leq  100000$
+
 $costs[i]$ will be a positive integer
 
 ## Examples
