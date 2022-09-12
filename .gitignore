@@ -4,7 +4,7 @@
 *.pdf
 *.zip
 *.swp
-
+.idea
 .npm
 .npm-install
 .tsc
