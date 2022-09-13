@@ -70,8 +70,8 @@ int main()
 
     sort(output.begin(), output.end());
 
-    // for (string pirate : output)
-    // {
-    //     cout << pirate << endl;
-    // }
+    for (string pirate : output)
+    {
+        cout << pirate << endl;
+    }
 }
