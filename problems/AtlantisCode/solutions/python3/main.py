@@ -2,7 +2,6 @@ from sys import stdin, stdout
 
 codeLength = int(stdin.readline().strip())
 code = stdin.readline().strip()
-countDict = {}
 
 abScore = 4
 aScore = 1
