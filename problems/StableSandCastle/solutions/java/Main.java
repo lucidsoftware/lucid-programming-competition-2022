@@ -15,10 +15,10 @@ public class Main {
         }
 
         //check every index and the next 3 sections
-        for (int i = 0; i < length - 1; ++i) {
+        for (int i = 0; i < length + 1; ++i) {
             if (Math.abs(wall[i] - wall[i + 1]) > 4 ||
-                Math.abs(wall[i] - wall[i + 2]) > 4 ||
-                Math.abs(wall[i] - wall[i + 3]) > 4) {
+                (i < length && (Math.abs(wall[i] - wall[i + 2]) > 4)) ||
+                (i < length - 1 && Math.abs(wall[i] - wall[i + 3]) > 4)) {
                     System.out.println("False");
                     return;
             }
