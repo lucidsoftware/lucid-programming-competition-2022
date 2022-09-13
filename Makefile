@@ -12,7 +12,7 @@ SAMPLE_DESCRIPTIONS_HTML := $(SAMPLE_DESCRIPTIONS_MD:%.md=%.html)
 
 all: problems.pdf instructions.pdf
 
-include $(wildcard problems/*/Makefile) $(wildcard samples/*/Makefile)
+include $(wildcard problems/*/Makefile)
 
 test-%:
 	@for f in $(sort $(wildcard problems/$*/solutions/*.run samples/$*/solutions/*.run)); do \
@@ -46,26 +46,3 @@ problems.pdf: $(PROBLEM_DESCRIPTIONS_HTML) $(shell find problems -name '*.png' -
 instructions.pdf: instructions.html rules.html schedule.html details.html $(SAMPLE_DESCRIPTIONS_HTML) $(shell find samples -name '*.png')
 	wkhtmltopdf $(PDF_OPTIONS) instructions.html rules.html schedule.html details.html $(sort $(SAMPLE_DESCRIPTIONS_HTML)) $@
 
-leaderboard/.npm-install:
-	rm -rf $(@D)/node_modules
-	cd $(@D) && yarn install
-	> $@
-
-leaderboard/.tsc-compile: leaderboard/.npm-install $(wildcard leaderboard/*.ts)
-	$(@D)/node_modules/.bin/tsc --downlevelIteration -p $(@D)
-	> $@
-
-leaderboard.zip: $(shell find leaderboard) leaderboard/.npm-install leaderboard/.tsc-compile
-	rm -f $@
-	cd leaderboard && zip -qr ../leaderboard node_modules *.js
-
-.PHONY: deploy
-deploy: deploy-leaderboard deploy-queue
-
-.PHONY: deploy-leaderboard
-deploy-leaderboard: leaderboard.zip
-	aws-staging --region us-west-1 lambda update-function-code --function-name competition-2017-leaderboard --zip-file fileb://$< --publish
-
-.PHONY: deploy-queue
-deploy-queue: leaderboard.zip
-	aws-staging --region us-west-1 lambda update-function-code --function-name competition-2017-queue --zip-file fileb://$< --publish

@@ -8,11 +8,11 @@ For example, if an employee were named `Alice Sandcastle`, then the botnet might
 You are tired of these emails, but want to be careful to not filter too aggressively and miss important communications from a customer.
 
 Given a list of real employee names, and then a list of names that came from the email server, write a script that can classify each name into three categories: `EMPLOYEE`, `BOT`, or `CUSTOMER`.
-A name is an `EMPLOYEE` if it shows up on the employee list and is not misspelled in anyway.
-A name is a `BOT` if it differs from an employee name by exactly one character (either a replacement, deletion, or addition).
-A name is a `CUSTOMER` if it differs from an employee name by more than one character.
+A name is an `EMPLOYEE` if it shows up on the employee list (ignoring differences in casing and any spaces). No name on the employee list should ever be classified as a bot.
+A name is a `BOT` if it differs from an employee name by exactly one character (either a replacement, deletion, or addition) and is not already on the employee list.
+A name is a `CUSTOMER` if it differs from all of the employee names by more than one character.
 
-**Important**: Names are _not_ case sensitive, meaning that you should consider `Alice` to be the exact same name as `alice`. For the purposes of this classifier, spaces are also considered non-essential characters, meaning that `Alice Sandcastle` is the same name as `AliceSandcastle`.
+**Important**: Names are _not_ case sensitive, meaning that you should consider `Alice` to be the exact same name as `alice`. For the purposes of this classifier, spaces are also considered non-essential characters. This means that `Alice Sandcastle` is the same name as `AliCesAndcasTLe`.
 
 
 # Input
@@ -43,7 +43,7 @@ The expected output is the classification of each name, in the exact order they 
 # Constraints
 * The number of employees will always be between 1 and 100 (inclusive)
 * The number of names to classify will be between 1 and 100,000 (inclusive)
-* The length of a name will always be between 2 and 30 (inclusive)
+* The length of a name will always be between 2 and 100 (inclusive)
 * Names of employees and names to classify will only consist of the upper and lowercase letters A-Z and may contain a single space in the middle.
 * Names are *not* case or space sensitive, meaning that, for purposes of classification, you should consider `alicesandcastle` to be the exact same name as `Alice Sandcastle`.
 
@@ -85,6 +85,9 @@ Olavia Orcash
 EMPLOYEE
 CUSTOMER
 BOT
+BOT
+BOT
+CUSTOMER
 ```
 
 
