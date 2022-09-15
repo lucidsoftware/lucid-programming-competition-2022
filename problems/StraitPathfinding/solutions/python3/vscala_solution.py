@@ -1,4 +1,4 @@
-from heapq import heappush, heappop
+from collections import deque
 m, n = int(input()), int(input())
 port = [[c for c in input()] for _ in range(m)]
 
@@ -18,10 +18,10 @@ for i, row in enumerate(port):
 		else:
 			start = (i, j)
 
-pq = [(0, *start)]
+queue = deque([(0, *start)])
 visited = set()
-while pq:
-	t, i, j = heappop(pq)
+while queue:
+	t, i, j = queue.popleft()
 	if (i, j) in obstacle:
 		continue
 	if len(boat_t) == t:
@@ -47,9 +47,8 @@ while pq:
 	if (t, i, j) in visited:
 		continue
 	visited.add((t, i, j))
-	heappush(pq, (t+1, i, j))
-	heappush(pq, (t+1, i+1, j))
-	heappush(pq, (t+1, i, j+1))
-	heappush(pq, (t+1, i-1, j))
-	heappush(pq, (t+1, i, j-1))
-	
+	queue.append((t+1, i, j))
+	queue.append((t+1, i+1, j))
+	queue.append((t+1, i, j+1))
+	queue.append((t+1, i-1, j))
+	queue.append((t+1, i, j-1))
