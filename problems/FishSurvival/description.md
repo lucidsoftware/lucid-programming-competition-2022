@@ -22,14 +22,17 @@ Input will be formatted as follows:
 
 ## Constraints
 0 <= Total fish population at any time <= 2,000,000,000
+
 0 <= Fish population growth <= 2,000,000
+
 1 <= Group size <= 200,000
+
 1 <= Lines of input <= 100,000
 
 ## Examples
 ### Input 1
 ```
-10
+10 3
 G 7
 P 4
 G 4
@@ -41,7 +44,7 @@ G 4
 
 ### Input 2
 ```
-18
+18 6
 P 5
 P 6
 G 15

@@ -3,11 +3,11 @@
 Cora l'Rief is an aspiring marine biotechnologist, and she is convinced that there are patterns to be found in the various shoals of fish that live along the Great Barrier Reef. Since the reef is fairly linear, the populations of these shoals can be represented as a one-dimensional array of integers. Cora has several ranges that she would like to analyze by finding the [bitwise exclusive or](https://en.wikipedia.org/wiki/Exclusive_or#Bitwise_operation) (`^` or `XOR` in most languages) of the population sizes contained in those ranges. Can you respond to Cora's queries?
 
 ## Input
-The first line of input consists of two integers `n q`, where `n` is the number of shoals in the reef, and `q` is the number of queries.
+The first line of input consists of two integers $n$ $q$, where $n$ is the number of shoals in the reef, and $q$ is the number of queries.
 
-The second line of input consists of `n` space-separated integers, representing the shoal sizes along the reef.
+The second line of input consists of $n$ space-separated integers, representing the shoal sizes along the reef.
 
-The next `q` lines are of the form `x y`, where `x` is the 1-indexed position of the first reef in the query range, and `y` is the position of the last reef in the query range (inclusive).
+The next $q$ lines are of the form $x$ $y$, where $x$ is the 1-indexed position of the first reef in the query range, and $y$ is the position of the last reef in the query range (inclusive).
 
 ```
 n q

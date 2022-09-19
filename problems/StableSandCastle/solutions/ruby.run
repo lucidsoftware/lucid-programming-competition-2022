@@ -1,0 +1,2 @@
+#!/bin/bash
+ruby $(dirname $0)/ruby/main.rb

@@ -35,7 +35,7 @@ False
 ### Example input #1:
 ```
 5
-1 2 3 4 5
+2 1 3 4 2
 ```
 
 ### Example output #1:
@@ -50,6 +50,17 @@ True
  ```
 
 ### Example output #2:
+```
+False
+```
+
+### Example input #3:
+```
+11
+1 2 3 4 5 6 7 8 9 10 11
+ ```
+
+### Example output #3:
 ```
 False
 ```

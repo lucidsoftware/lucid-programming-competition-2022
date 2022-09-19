@@ -1,5 +1,3 @@
-import sys
-
 def isSafeToFish():
     trueCount = 0
 
