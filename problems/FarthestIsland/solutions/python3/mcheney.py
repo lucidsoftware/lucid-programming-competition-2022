@@ -2,7 +2,7 @@ import heapq
 
 M, C = [int(ea) for ea in input().split(' ')]
 S = int(input())
-costs = [int(ea) for ea in input().strip().split(' ')]
+costs = [int(ea) for ea in input().split(' ')]
 
 bought = []
 
