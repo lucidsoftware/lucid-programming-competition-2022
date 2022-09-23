@@ -18,23 +18,41 @@ $0 <= nums[x] <= 10^{9}
 
 All values given will be integers.
 
-### Example Input
+### Example Input 1
 ```
 4 3 2 1 0 1
-5 0 0 0 2 0 2
-1 0
 ```
 
-### Example Output
+### Example Output 1
 ```
 0
-1
-1
 ```
 
 ### Explanation
 You will always arrive at index 4 and can not reach the surface.
 
+### Example Input 2
+```
+5 0 0 0 2 0 2
+```
+
+### Example Output 2
+```
+1
+```
+
+### Explanation
 Take oxygen tank at index 0, take oxygen tank at index 4, reach the surface.
 
+### Example Input 3
+```
+1 0
+```
+
+### Example Output 3
+```
+0
+```
+
+### Explanation
 Take oxygen tank at index 0, reach the surface by traveling one unit.
