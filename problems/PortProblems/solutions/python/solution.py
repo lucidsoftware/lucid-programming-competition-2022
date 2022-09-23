@@ -9,7 +9,9 @@ passenger_ships = int(sys.stdin.readline())
 if passenger_ships > 0:
     arrivals = [int(arrival) for arrival in sys.stdin.readline().split(' ')]
     departures = [int(departure) for departure in sys.stdin.readline().split(' ')]
-
+else:
+    arrivals = []
+    departures = []
 def main(docks, passenger_ships, arrivals, departures):
     cargo_ships = 0
     free_since_list = [0] * docks
