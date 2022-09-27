@@ -71,5 +71,5 @@ A  0  0  0  0  0  0  0  0
 
 ### Example output #2:
 ```
-A
+B
 ```
