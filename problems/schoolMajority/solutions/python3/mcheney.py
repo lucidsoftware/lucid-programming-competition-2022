@@ -10,7 +10,7 @@ LAND = 'land'
 WATER = 'water'
 
 def convertStartingLocation(startingChar: str):
-    if startingChar == '-1':
+    if startingChar == '1':
         return -1, LAND
     if startingChar == '0':
         return BIG, WATER
@@ -21,7 +21,7 @@ startingFish = {}
 for n in range(N):
     line = input().replace('  ', ' ').split(' ')
     for i, f in enumerate(line):
-        if f == '0' or f == '-1':
+        if f == '0' or f == '1':
             continue
         if f not in startingFish:
             startingFish[f] = []
@@ -51,7 +51,7 @@ for f in sorted(startingFish.keys()):
                 if ns > cs:
                     grid[cx][cy - 1] = (cs, f)
                     q.append((cx, cy - 1, cs + 1))
-            if cy < N-1:
+            if cy < M-1:
                 ns, nf = grid[cx][cy + 1]
                 if ns > cs:
                     grid[cx][cy + 1] = (cs, f)

@@ -7,7 +7,7 @@ g = [input().split() for _ in range(n)]
 q = []
 for i in range(n):
     for j in range(m):
-        if g[i][j] not in ['0', '-1']:
+        if g[i][j] not in ['0', '1']:
             heapq.heappush(q, (0, g[i][j], i, j)) # (step, type, r, c)
             g[i][j] = '0'
 
