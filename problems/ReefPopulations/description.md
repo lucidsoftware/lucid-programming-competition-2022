@@ -1,6 +1,6 @@
 # Reef Populations
 
-Cora l'Rief is an aspiring marine biotechnologist, and she is convinced that there are patterns to be found in the various shoals of fish that live along the Great Barrier Reef. Since the reef is fairly linear, the populations of these shoals can be represented as a one-dimensional array of integers. Cora has several ranges that she would like to analyze by finding the [bitwise exclusive or](https://en.wikipedia.org/wiki/Exclusive_or#Bitwise_operation) (`^` or `XOR` in most languages) of the population sizes contained in those ranges. Can you respond to Cora's queries?
+Cora l'Rief is an aspiring marine biotechnologist, and she is convinced that there are patterns to be found in the various shoals of fish that live along the Great Barrier Reef. Since the reef is fairly linear, the populations of these shoals can be represented as a one-dimensional array of integers. Cora has several ranges that she would like to analyze by finding the [bitwise exclusive or](https://en.wikipedia.org/wiki/Exclusive_or#Bitwise_operation) (`^` or `XOR` in most languages) of the population sizes contained in those ranges. Help Cora by calculating the answer to each of her queries.
 
 ## Input
 The first line of input consists of two integers $n$ $q$, where $n$ is the number of shoals in the reef, and $q$ is the number of queries.
@@ -31,7 +31,7 @@ rq
 ## Constraints
 $0 < n \leq 1000000$
 
-$0 \leq q \leq 1000000$
+$0 \leq q \leq 100000$
 
 $0 \leq a \leq 2^{31} - 1$
 
