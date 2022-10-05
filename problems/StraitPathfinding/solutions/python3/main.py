@@ -1,4 +1,4 @@
-from typing import List, Tuple, TypeVar, Callable
+from typing import List, Tuple, TypeVar, Callable, Dict
 from sys import stdin
 
 
@@ -69,7 +69,7 @@ class State:
 
 
 def put_if_not_exists_and_get(
-    dict: dict[Key, Value], key: Key, init: Callable[[], Value]
+    dict: Dict[Key, Value], key: Key, init: Callable[[], Value]
 ) -> Value:
     """
     Puts a value into a dictionary at the given key if a value does not already
@@ -92,7 +92,7 @@ def put_if_not_exists_and_get(
     return dict[key]
 
 
-def print_nested_dicts(dict: dict[Key, dict[InnerKey, A]]) -> None:
+def print_nested_dicts(dict: Dict[Key, Dict[InnerKey, A]]) -> None:
     """
     Prints key-keys and associated values.
 

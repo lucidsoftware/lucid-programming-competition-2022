@@ -1,7 +1,7 @@
 # Does not work
 
 toolNames = input().split(', ')
-print(toolNames)
+# print(toolNames)
 toolNums = [int(ea) for ea in input().split(', ')]
 tools = {}
 for i in range(len(toolNames)):
@@ -16,4 +16,4 @@ for j in range(J):
     if all([(jTools[i] in tools and tools[jTools[i]] >= jNums[i]) for i in range(len(jTools))]):
         canDo.append(jName)
 
-print(*sorted(canDo, key=lambda x: x.lower()), sep='\n')
+print(*sorted(canDo), sep='\n')

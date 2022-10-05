@@ -1,5 +1,5 @@
 # Wanted Pirates
-A collection of government officials are intending to establish bounties for the worlds most notorious pirates. Because their budget for bounties is limited, they want to start with only the most widely wanted pirates, so they intend to issue bounties only for those pirates that are wanted globally.
+A collection of government officials are intending to establish bounties for the world's most notorious pirates. Because their budget for bounties is limited, they want to start with only the most widely wanted pirates, so they intend to issue bounties only for those pirates that are wanted globally.
 
 Given a list of pirates that are wanted in each country, determine the list of pirates that are wanted in every country.
 
@@ -12,7 +12,7 @@ Line
 Line
 ...
 ```
-The number of countries is an integer between 2 and TBD
+The number of countries is an integer between 2 and 1000000
 
 Line
 ```
@@ -20,7 +20,7 @@ N, <list of names>
 ```
 A line is a comma separated list, and starts with the name of the country. Each other item on the list is the name of a pirate
 
-The number of pirates on a line can be any number from 1 to TBD
+The number of pirates on a line can be any number from 1 to 2000
 
 ## Output
 The list of pirates wanted in every country, sorted lexicographically.
@@ -68,5 +68,5 @@ Sayyida Al Hurda
 
 ## Constraints
 
-The number of pirates on a line is between 1 and TBD
-The number of countries is between 2 and TBD
+The number of pirates on a line is between 1 and 2000
+The number of countries is between 2 and 1000000

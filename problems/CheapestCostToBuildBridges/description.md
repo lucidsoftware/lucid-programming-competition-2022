@@ -1,7 +1,7 @@
 # Cheapest Cost To Build Bridges
 Given a `m` x `n` 2D binary matrix that represents a map of 1s land and 0s water, return the minimum cost to connect all the islands with bridges or `-1` if it is impossible.
 
-A bridge is a vertical or horizontal path over water between islands with a cost associated with the number of water cells the path traverses. 
+A bridge is a vertical or horizontal path over water between islands with a cost associated with the number of water cells the path traverses. In other words, all bridges are straight, and can only run either north-south or east-west.
 
 An island is surrounded by water and formed by connecting adjacent land horizontally or vertically.
 
@@ -18,14 +18,14 @@ grid[m-1][0], grid[m-1][1], ... grid[m-1][n-1]
 ```
 
 ## Output
-The output will be a single integer representing the minimum total cost to connect all islands.
+The output will be a single integer representing the minimum total cost to connect all islands, or -1 if impossible.
 
 ## Constraints
-$1 \leq m, n \leq 1000$
+1 <= m, n <= 1000$
 
-$m$ and $n$ will be integers
+m and n will be integers
 
-$grid[i][j]$ will be 0 or 1
+grid[i][j] will be 0 or 1
 
 ## Examples
 

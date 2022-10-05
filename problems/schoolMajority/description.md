@@ -2,11 +2,11 @@
 
 After a big extinction event, the ocean has been reduced to only a few types of fish. Which ones will rise to the top to dominate the seas?
 
-You will be given a grid representing the ocean, each tile can begin with either **0**, meaning open ocean, **1**, meaning land, or a letter of the alphabet, which designates a type of fish.
+You will be given a grid representing the ocean. Each tile will have a **0**, meaning open ocean, **1**, meaning land, or a letter of the alphabet, which designates a type of fish.
+
+The fish begin expanding at the same rate. Each generation, the fish expand in cardinal directions (not diagonally) into open ocean tiles. Each fish type is a letter, so if two fish would expand to the same tile in the same generation, the letter that comes first in the alphabet will expand to that position. i.e. **A** would win the battle with **C** to expand to the open square.
 
 Your job is to repopulate the ocean, and determine which species of fish will create the largest school. Start with the initial colonies and expand outward in simultaneous generations until all available spaces (open ocean, not previously claimed by any fish type) have been claimed and then return the species with the largest population.
-
-Fish expand in cardinal directions, not diagonally. Each fish type is a letter, so if two fish would expand to the same square in the same generation, the letter that comes first in the alphabet will expand to that position. i.e. **A** would win the battle with **C** to expand to the open square.
 
 ## Input
 The input will be formatted in the following way:

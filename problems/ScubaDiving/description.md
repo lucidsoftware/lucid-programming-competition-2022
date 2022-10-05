@@ -12,9 +12,9 @@ Write 1 (true) or 0 (false) to the stdout representing if you can make it to the
 
 ## Constraints
 
-$1 <= nums.length <= 10^{4}
+1 <= nums.length <= 10^{4}
 
-$0 <= nums[x] <= 10^{9}
+0 <= nums[x] <= 10^{9}
 
 All values given will be integers.
 

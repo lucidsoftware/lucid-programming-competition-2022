@@ -14,22 +14,28 @@ The number of characters in the code will always be 1 <= n <= 10000
 
 ## Examples
 ### Input 1
+```
 9
 AAABBBCAB
+```
 ### Output 1 and Explanation
+```
 10
+```
 
 #### Explanation
 A   A   AB  B   B   C   AB
 1 + 1 + 4 + 2 + 2 - 4 + 4 = 10. Note that we subtract 4 because there are 2 AB pairs in the entire code: 2^2 = 4.
 
 ### Input 2
+```
 12
 CABCABCAAABB
-
+```
 ### Output 2
+```
 -11
-
+```
 
 #### Explanation
  C   AB  C   AB  C   A   A   AB  B
