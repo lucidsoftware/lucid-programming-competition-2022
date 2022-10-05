@@ -21,7 +21,7 @@ grid[m-1][0], grid[m-1][1], ... grid[m-1][n-1]
 The output will be a single integer representing the minimum total cost to connect all islands, or -1 if impossible.
 
 ## Constraints
-1 <= m, n <= 1000$
+1 <= m, n <= 1000
 
 m and n will be integers
 
