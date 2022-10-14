@@ -29,7 +29,7 @@ grid[i][j] will be 0 or 1
 
 ## Examples
 
-### Example Input 1
+### Example Input 0
 ```
 3 3
 1 0 1
@@ -37,12 +37,12 @@ grid[i][j] will be 0 or 1
 0 1 1
 ```
 
-### Example Output 1
+### Example Output 0
 ```
 2
 ```
 
-### Explanation 1
+### Explanation 0
 Two bridges each of length one are needed to connect all islands
 ```
 1 - 1
@@ -51,7 +51,7 @@ Two bridges each of length one are needed to connect all islands
 ```
 
 
-### Example Input 2
+### Example Input 1
 ```
 3 3
 1 0 1
@@ -59,12 +59,12 @@ Two bridges each of length one are needed to connect all islands
 0 1 0
 ```
 
-### Example Output 2
+### Example Output 1
 ```
 -1
 ```
 
-### Explanation 2
+### Explanation 1
 Only two of the islands can be connected.
 ```
 1 - 1
@@ -73,7 +73,7 @@ Only two of the islands can be connected.
 ```
 
 
-### Example Input 3
+### Example Input 2
 ```
 3 3
 1 1 0
@@ -81,12 +81,12 @@ Only two of the islands can be connected.
 0 1 0
 ```
 
-### Example Output 3
+### Example Output 2
 ```
 2
 ```
 
-### Explanation 3
+### Explanation 2
 Two bridges each of length one are needed to connect all islands
 ```
 1 1 0
