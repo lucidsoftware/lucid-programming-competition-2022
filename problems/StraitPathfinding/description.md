@@ -17,6 +17,7 @@ Map of Port
 The length and width of the strait will be integers. The map of the port will
 be a `length` $\times$ `width` set of characters representing the strait. The following
 characters will be used:
+
 * `v` for a boat that begins travelling downwards
 * `^` for a boat that begins travelling upwards
 * `x` for an obstacle that stays in place
@@ -24,6 +25,7 @@ characters will be used:
 * `@` for your starting position
 
 For example:
+
 ```
 5
 10
@@ -47,6 +49,7 @@ in place.
 ## Example Inputs and Outputs
 
 **Input 1:**
+
 ```
 3
 5
@@ -56,11 +59,13 @@ in place.
 ```
 
 **Output 1:**
+
 ```
 6
 ```
 
 **Input 2:**
+
 ```
 5
 10
@@ -72,23 +77,45 @@ in place.
 ```
 
 **Output 2:**
+
 ```
 10
 ```
 
 ## Boat Rules
 
-Boats will avoid collisions with the sides or obstacles by turning around in
-place instead of moving; for example, 3 moves into the above input (not
-accounting for boat movement) the strait will look like this:
+You (`@`) and the other boats move at the same time. This means that moving into
+a space that was previously occupied by another boat is legal; in this case you
+pass by the other boat harmlessly:
 
 ```
-State 3:
-~~~~~~~~~~
-~~~~~~x~~~
-@~~~~~v~~~
-~~~~~~~~x~
-~~~^~~~~~~
+~~~      ~~~
+~@~  =>  ~^~ 
+~^~      ~@~
+```
+
+Staying in place when another boat would collide with you is an invalid move:
+
+```
+~~~      ~~~
+~@~  =>  ~!~
+~^~      ~~~
+```
+
+Boats will avoid collisions with the sides or obstacles by turning around in
+place instead of moving:
+
+```
+~~~      ~~~
+~v~  =>  ~^~
+~x~      ~x~
+```
+
+```
+~~~      ~~~
+~~~  =>  ~~~
+~v~      ~^~
+--- edge ---
 ```
 
 ## Constraints
