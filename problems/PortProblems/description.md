@@ -5,10 +5,10 @@ You are the manager of a busy ocean port who has to juggle the needs of both pas
 
 ## Input
 Each test case represents a working day for your port.
-The first line of the input will an integer `d` which represents the number of docks in your port.
+The first line of the input will be an integer `d` which represents the number of docks in your port.
 The second line of the input will contain an integer `p` which represents the number of passenger ships scheduled to dock at your port on this day.
 The third line of the input will contain `p` integers, `a1..ap` separated by spaces. They represent the arrival times of the passenger ships.
-The forth line of the input will contain `p` integers, `d1..dp` also separated by spaces. They represent the departure times of the passenger ships.
+The fourth line of the input will contain `p` integers, `d1..dp` also separated by spaces. They represent the departure times of the passenger ships.
 Every departure and arrival time is represented as a integer equal to the number of minutes that have passed since 8:00am. So, for example, 8:00am would be represented as the integer `0`, 8:00pm would be represented as the integer `720` and 4:20pm would be represented as the integer `500`.
 
 ```
@@ -27,7 +27,9 @@ The output should be a single integer `c` representing the maximum number of car
 
 The number of docks available to you, `d` will always be enough to accommodate the scheduled passenger ships. You will not receive a passenger schedule where more passenger ships are scheduled at a given time than there are total docks.
 
-Arrival times are inclusive and departure times are exclusive. So if a ship is scheduled to arrive at 9:00am (minute 60), the dock at which that ship lands will be occupied between 9:00am and 9:01am (minute 61). However, if a ship departs at 10:00am (minute 120), that means that the dock it occupied becomes free at exactly 10:00am (minute 120).
+Passenger ships occupy a dock during their arrival time but not during their departure time.
+
+So if a ship is scheduled to arrive at 9:00am (minute 60), the dock at which that ship lands will be occupied at minute 60. However, if a ship departs at 10:00am (minute 120), that means that the dock it occupied becomes free at exactly minute 120. A ship arriving at minute 120 can occupy the dock.
 
 Working hours between at 8:00am (minute 0) exactly and end at 8:00pm (minute 720) exactly. So the time between 8:00am and 8:01am is available to you for your use, but the minute between 8:00pm and 8:01pm is not.
 
