@@ -4,7 +4,7 @@ You are on a Scuba Diving trip with friends and going deeper and deeper into the
 and didn't think of the going back up to the surface "part". Luckily for you, your friends have been leaving an oxygen tank every step of the way up to the surface (good planners). Knowing this, you must figure out if you can make it to the top of the surface with the provided oxygen tanks. You can only carry one oxygen tank at a time.
 
 ## Input
-There is one line of input which is an array of integers (seperated by spaces. e.g "4 3 2 1 0 2"). Each integer represents an oxygen tank at a location, index 0 is the bottom of the ocean, the end index is the surface. It requires 1 unit of oxygen to go from (x) to (x+1). You may choose at each index to keep your current oxygen tank, or replace it with the new oxygen tank. You start at index 0.
+There is one line of input which is an array of integers (seperated by spaces. e.g "4 3 2 1 0 2"). Each integer represents an oxygen tank at the index provided with that number of units of oxygen in it. Index 0 is the bottom of the ocean, the end index is the surface. It requires 1 unit of oxygen to go from (x) to (x+1). You may choose at each index to keep your current oxygen tank, or replace it with the new oxygen tank. You start at index 0.
 
 
 ## Output
