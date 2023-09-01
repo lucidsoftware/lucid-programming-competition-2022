@@ -1,0 +1,17 @@
+*.class
+*.dep
+*.html
+*.pdf
+*.zip
+*.swp
+*.iml
+.idea
+.npm
+.npm-install
+.tsc
+.tsc-compile
+tests.zip
+node_modules/
+leaderboard/*.js
+.DS_Store
+.vscode
